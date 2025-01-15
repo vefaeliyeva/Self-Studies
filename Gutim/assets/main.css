@@ -58,7 +58,7 @@ a {
 
 @media only screen and (max-width: 991px) {
   .container {
-    padding: 0px 40px;
+    padding: 0px 80px;
   }
 }
 body {
@@ -153,7 +153,6 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   padding: 250px 0px;
-  position: absolute;
   width: 100%;
 }
 #HERO .heroSection {
@@ -192,4 +191,55 @@ hr {
 }
 #HERO .heroSection .heroBtn:hover {
   cursor: pointer;
+}
+
+#ABOUT {
+  padding: 100px 0px;
+}
+#ABOUT .aboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+#ABOUT .aboutSection .aboutSectionRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+#ABOUT .aboutSection .aboutSectionRight h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+#ABOUT .aboutSection .aboutSectionRight p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6b6b6b;
+  margin-bottom: 15px;
+}
+#ABOUT .aboutSection .aboutSectionRight .aboutBtn {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 32px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right, #eb3c5a, #f67831);
+}
+#ABOUT .aboutSection .aboutSectionRight .aboutBtn:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  #ABOUT .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */

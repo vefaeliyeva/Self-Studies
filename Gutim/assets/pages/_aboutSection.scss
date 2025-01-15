@@ -1,0 +1,40 @@
+#ABOUT{
+    padding: 100px 0px;
+    .aboutSection{
+        @include flexBox();
+        column-gap: 60px;
+        .aboutSectionRight{
+            @include flexBoxColumn();
+            align-items: flex-start;
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 16px ;
+                font-weight: 400;
+                line-height: 26px;
+                color: #6b6b6b ;
+                margin-bottom: 15px;
+            }
+            .aboutBtn{
+                @include primaryButton();
+            }
+        }
+        // .aboutSectionLeft{
+        //     .aboutSectionaMainImg{
+        //         position: relative;
+        //     }
+        //     .aboutSectionSecondImg{
+        //         position: absolute;
+        //         bottom: 100px;
+        //     }
+        // }
+
+        @media only screen and (max-width:991px){
+            @include flexBoxColumn();
+        }
+    }
+}
