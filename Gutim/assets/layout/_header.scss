@@ -1,0 +1,66 @@
+header {
+  background-color: #4c4c4c;
+  padding: 26px 0px;
+  .header {
+    @include flexBox();
+    justify-content: space-between;
+    nav {
+      ul {
+        @include flexBox();
+        column-gap: 45px;
+        a {
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          &::after{
+            content: "";
+            border: 1px solid transparent;
+            width: 0px;
+            display: block;
+          }
+          &:hover::after {
+            border: 1px solid #f15d44;
+            width: 100%;    
+          }
+        }
+        .navBtn{
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid #f15d44;
+            background-color: transparent;
+            padding: 14px 28px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+      }
+      @media only screen and (max-width: 991px){
+        display: none;
+    }
+    }
+    .menu{
+        background-color: #212121;
+        padding: 4px 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 991px){
+            display: block;
+        }
+        span{
+            margin-right: 10px;
+        }
+    }
+  }
+}
+hr{
+    margin: 0;
+    color: white;
+    width: 2px;
+}

@@ -1,0 +1,19 @@
+@mixin flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@mixin flexBoxColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin backgroundImage($image-url) {
+    background-image: url($image-url);
+    background-size: cover;        // Ensures the image covers the area
+    background-position: center;   // Centers the image
+    background-repeat: no-repeat;  // Prevents tiling
+  }
+    
