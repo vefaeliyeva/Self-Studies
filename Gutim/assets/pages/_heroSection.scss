@@ -1,0 +1,32 @@
+#HERO{
+    @include backgroundImage("https://preview.colorlib.com/theme/gutim/img/hero-bg.jpg");
+    padding: 250px 0px;
+    position: absolute;
+    width: 100%;
+    .heroSection{
+        @include flexBoxColumn();
+        align-items: flex-start;
+        row-gap: 0px;
+        span{
+            color: #f15d44;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        h1{
+            font-size: 72px;
+            color: white;
+            font-weight: 600;
+        }
+        p{
+            color: white;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            margin-bottom: 44px;
+        }
+        .heroBtn{
+            @include primaryButton();
+        }
+    }
+}
