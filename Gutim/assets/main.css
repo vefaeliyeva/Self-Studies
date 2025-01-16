@@ -56,11 +56,6 @@ a {
   padding: 0px 140px;
 }
 
-@media only screen and (max-width: 991px) {
-  .container {
-    padding: 0px 80px;
-  }
-}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -242,4 +237,88 @@ hr {
     flex-direction: column;
     align-items: center;
   }
+}
+
+#SERVICES {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  gap: 0;
+}
+@media only screen and (max-width: 991px) {
+  #SERVICES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#SERVICES .servicesSectionLeft {
+  width: 50%;
+  height: 720px;
+}
+@media only screen and (max-width: 991px) {
+  #SERVICES .servicesSectionLeft {
+    width: 100%;
+  }
+}
+#SERVICES .servicesSectionLeft img {
+  width: 100%;
+}
+#SERVICES .servicesSectionRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  gap: 0;
+}
+@media only screen and (max-width: 991px) {
+  #SERVICES .servicesSectionRight {
+    width: 100% !important;
+  }
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide:first-child {
+  background-color: #1e1e1e;
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide:last-child {
+  background-color: #141414;
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  #SERVICES .servicesSectionRight .servicesSectionRightSide {
+    width: 100%;
+    margin-top: -10px;
+  }
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding: 30px 70px 20px 70px;
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard .cardImage {
+  height: 55px;
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard .cardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-top: 36px;
+  margin-top: 20px;
+}
+#SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard .cardText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: #bdbdbd;
 }/*# sourceMappingURL=main.css.map */
