@@ -7,11 +7,11 @@
   }
   .servicesSectionLeft {
     width: 50%;
-    height: 720px;
     @media only screen and (max-width: 991px) {
       width: 100%;
     }
     img {
+      height: 555px;
       width: 100%;
     }
   }
@@ -29,15 +29,17 @@
       background-color: #141414;
     }
     .servicesSectionRightSide {
+      margin-top: -5px;
       @include flexBoxColumn();
       @media only screen and (max-width:991px){
       width: 100%;
       margin-top: -10px;
+      gap: 40px;
       }
       .servicesCard {
         @include flexBoxColumn();
         align-items: flex-start;
-        padding: 30px 70px 20px 70px;
+        padding: 30px 70px 21px 70px;
         .cardImage {
           height: 55px;
         }

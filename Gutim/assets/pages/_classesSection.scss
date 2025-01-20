@@ -1,0 +1,47 @@
+#CLASSES{
+    @include flexBoxColumn();
+    padding: 70px 0px;
+    gap: 30px;
+    .classesTitle{
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    .classesCardSection{
+        @include flexBoxColumn();
+        gap: 30px;
+        .cardSectionTop{
+            @include flexBox();
+            @media only screen and (max-width:991px){
+                @include flexBoxColumn();
+                row-gap: 30px;
+            }
+            .classesCard{
+                .classesCardText{
+                    padding: 20px;
+                    margin-top: -100px;
+                    position: relative;
+                    z-index: 10;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    .classesName{
+                        p{
+                            font-size: 22px;
+                            font-weight: 600;
+                            color: white;
+                        }
+                    }
+                    .trainersName{
+                        span{
+                            font-size: 14px;
+                            color: white;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

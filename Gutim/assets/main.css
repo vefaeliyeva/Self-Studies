@@ -257,7 +257,6 @@ hr {
 }
 #SERVICES .servicesSectionLeft {
   width: 50%;
-  height: 720px;
 }
 @media only screen and (max-width: 991px) {
   #SERVICES .servicesSectionLeft {
@@ -265,6 +264,7 @@ hr {
   }
 }
 #SERVICES .servicesSectionLeft img {
+  height: 555px;
   width: 100%;
 }
 #SERVICES .servicesSectionRight {
@@ -288,6 +288,7 @@ hr {
   background-color: #141414;
 }
 #SERVICES .servicesSectionRight .servicesSectionRightSide {
+  margin-top: -5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,6 +297,7 @@ hr {
   #SERVICES .servicesSectionRight .servicesSectionRightSide {
     width: 100%;
     margin-top: -10px;
+    gap: 40px;
   }
 }
 #SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard {
@@ -303,7 +305,7 @@ hr {
   flex-direction: column;
   align-items: center;
   align-items: flex-start;
-  padding: 30px 70px 20px 70px;
+  padding: 30px 70px 21px 70px;
 }
 #SERVICES .servicesSectionRight .servicesSectionRightSide .servicesCard .cardImage {
   height: 55px;
@@ -321,4 +323,56 @@ hr {
   line-height: 26px;
   margin-bottom: 15px;
   color: #bdbdbd;
+}
+
+#CLASSES {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;
+  gap: 30px;
+}
+#CLASSES .classesTitle h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#CLASSES .classesCardSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#CLASSES .classesCardSection .cardSectionTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  #CLASSES .classesCardSection .cardSectionTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+#CLASSES .classesCardSection .cardSectionTop .classesCard .classesCardText {
+  padding: 20px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#CLASSES .classesCardSection .cardSectionTop .classesCard .classesCardText .classesName p {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+#CLASSES .classesCardSection .cardSectionTop .classesCard .classesCardText .trainersName span {
+  font-size: 14px;
+  color: white;
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
