@@ -1,8 +1,10 @@
 #TRAINER{
+    padding: 100px 0 140px 0;
     background-color: #f5f5f5;
     .container{
         .trainerSection{
             @include flexBoxColumn();
+            row-gap: 50px;
             .trainerSectionTop{
                 h1{
                     font-size: 40px;
@@ -15,15 +17,58 @@
                 .trainerInfoCard{
                     @include flexBoxColumn();
                     justify-content: center;
-                    // .trainersImage{
-                    // }
+                    &:hover{
+                        
+                    }
+                    .trainersImage{
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    }
                     .trainersInfoSection{
+                        @include flexBoxColumn();
+                        row-gap: 6px;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                         background-color: white;
-                        padding: 20px;
+                        padding: 20px 30px;
                         position: relative;
                         z-index: 10;
                         margin-top: -50px;
-                        width: 75%;
+                        width: 70%;
+                        h4{
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #f15d44;
+                        }
+                        .hidenInfoSection{
+                            display: none;
+                            text-align: center;
+                            &:hover{
+
+                            }
+                            span{
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 26px;
+                                color: #6b6b6b;
+                            }
+                            .trainersSocial{
+                                margin-top: 10px;
+                                @include flexBox();
+                                column-gap: 30px;
+                                a{
+                                    i{
+                                        color: black;
+                                        font-size: 18px;
+                                        &:hover{
+                                            color: #f15d44;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
                     }
                 }
             }

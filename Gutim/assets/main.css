@@ -378,12 +378,14 @@ hr {
 }
 
 #TRAINER {
+  padding: 100px 0 140px 0;
   background-color: #f5f5f5;
 }
 #TRAINER .container .trainerSection {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 50px;
 }
 #TRAINER .container .trainerSection .trainerSectionTop h1 {
   font-size: 40px;
@@ -403,11 +405,54 @@ hr {
   align-items: center;
   justify-content: center;
 }
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersImage {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 #TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
-  padding: 20px;
+  padding: 20px 30px;
   position: relative;
   z-index: 10;
   margin-top: -50px;
-  width: 75%;
+  width: 70%;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection p {
+  font-size: 16px;
+  color: #f15d44;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection {
+  display: none;
+  text-align: center;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6b6b6b;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection .trainersSocial {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection .trainersSocial a i {
+  color: black;
+  font-size: 18px;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection .trainersSocial a i:hover {
+  color: #f15d44;
 }/*# sourceMappingURL=main.css.map */
