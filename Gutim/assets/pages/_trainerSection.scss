@@ -11,7 +11,21 @@
             }
             .trainerSectionBottom{
                 @include flexBox();
-                gap: 30px;
+                gap: 40px;
+                .trainerInfoCard{
+                    @include flexBoxColumn();
+                    justify-content: center;
+                    // .trainersImage{
+                    // }
+                    .trainersInfoSection{
+                        background-color: white;
+                        padding: 20px;
+                        position: relative;
+                        z-index: 10;
+                        margin-top: -50px;
+                        width: 75%;
+                    }
+                }
             }
         }
     }
