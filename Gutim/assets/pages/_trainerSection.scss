@@ -1,0 +1,18 @@
+#TRAINER{
+    background-color: #f5f5f5;
+    .container{
+        .trainerSection{
+            @include flexBoxColumn();
+            .trainerSectionTop{
+                h1{
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+            }
+            .trainerSectionBottom{
+                @include flexBox();
+                gap: 30px;
+            }
+        }
+    }
+}
