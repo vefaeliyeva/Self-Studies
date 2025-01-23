@@ -431,7 +431,11 @@ hr {
 }
 #TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection {
   display: none;
+  overflow: hidden;
   text-align: center;
+}
+#TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection:hover {
+  display: block;
 }
 #TRAINER .container .trainerSection .trainerSectionBottom .trainerInfoCard .trainersInfoSection .hidenInfoSection span {
   font-size: 16px;

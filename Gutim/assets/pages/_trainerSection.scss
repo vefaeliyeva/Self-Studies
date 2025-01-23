@@ -18,7 +18,7 @@
                     @include flexBoxColumn();
                     justify-content: center;
                     &:hover{
-                        
+
                     }
                     .trainersImage{
                         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -43,9 +43,11 @@
                         }
                         .hidenInfoSection{
                             display: none;
+                            // height: 0px;
+                            overflow: hidden;
                             text-align: center;
                             &:hover{
-
+                                display: block;
                             }
                             span{
                                 font-size: 16px;
