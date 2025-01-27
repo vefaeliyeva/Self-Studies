@@ -1,0 +1,11 @@
+@mixin primaryButton(){
+    color: black;
+    background-color: #ffb320;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 28px;
+    &:hover{
+        cursor: pointer;
+    }
+}
