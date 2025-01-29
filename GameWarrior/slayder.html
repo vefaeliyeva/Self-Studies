@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Karusel (JS-siz)</title>
+    <style>
+        /* Karusel konteyneri */
+        .carousel {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slayd şəkilləri */
+        .carousel-inner {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            width: 100%;
+            flex: 1;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Radio düymələri (slaydlara keçid üçün) */
+        input[name="carousel"] {
+            display: none;
+        }
+
+        /* Hər radio düyməsi kliklənəndə slaydı dəyişir */
+        #slide1:checked ~ .carousel-inner {
+            transform: translateX(0%);
+        }
+        #slide2:checked ~ .carousel-inner {
+            transform: translateX(-100%);
+        }
+        #slide3:checked ~ .carousel-inner {
+            transform: translateX(-200%);
+        }
+
+        /* Səhifə nömrələri (indikatorlar) */
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .indicator {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Aktiv olan slaydın indikatoru fərqli rəngdə olsun */
+        #slide1:checked ~ .carousel-indicators label[for="slide1"],
+        #slide2:checked ~ .carousel-indicators label[for="slide2"],
+        #slide3:checked ~ .carousel-indicators label[for="slide3"] {
+            background-color: orange;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel">
+    <!-- Radio düymələri (slaydlara keçmək üçün) -->
+    <input type="radio" id="slide1" name="carousel" checked>
+    <input type="radio" id="slide2" name="carousel">
+    <input type="radio" id="slide3" name="carousel">
+
+    <!-- Slayd şəkilləri -->
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400/FF5733/ffffff?text=Slide+1" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400/33FF57/ffffff?text=Slide+2" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400/3357FF/ffffff?text=Slide+3" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Səhifə nömrələri (indikatorlar) -->
+    <div class="carousel-indicators">
+        <label for="slide1" class="indicator">01.</label>
+        <label for="slide2" class="indicator">02.</label>
+        <label for="slide3" class="indicator">03.</label>
+    </div>
+</div>
+
+</body>
+</html>

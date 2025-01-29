@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,4 +55,78 @@ a {
 
 body {
   font-family: "Roboto", serif;
+}
+
+header {
+  padding: 20px 0px;
+  background-color: black;
+  border-bottom: 3px solid #ffb320;
+}
+header .container .navigationPane .navbar ul {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+header .container .navigationPane .navbar ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+header .container .navigationPane button {
+  background-color: #ffb320;
+  border-radius: 30px;
+  padding: 12px 28px;
+  border: none;
+}
+header .container .navigationPane button a {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+
+#HERO .heroSectionContent {
+  padding: 150px 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  text-align: left;
+}
+#HERO .heroSectionContent h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+}
+#HERO .heroSectionContent h1 span {
+  color: #ffb320;
+}
+#HERO .heroSectionContent p {
+  font-size: 14px;
+  color: white;
+  line-height: 2;
+}
+#HERO .heroSectionContent .primary {
+  background-color: #ffb320;
+  border-radius: 30px;
+  padding: 12px 28px;
+  border: none;
+}
+#HERO .heroSectionContent .primary a {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+#HERO .carousel-indicators button {
+  width: 50px; /* Dairənin eni */
+  height: 50px; /* Dairənin hündürlüyü */
+  border-radius: 50%; /* Dairə formasında olsun */
+  background-color: yellow; /* Sarı fon */
+  color: black; /* Mətn rəngi */
+  font-size: 18px; /* Mətn ölçüsü */
+  font-weight: bold; /* Qalın mətn */
+  border: none; /* Sərhədsiz */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px; /* Aralarında məsafə */
+  transition: transform 0.2s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
