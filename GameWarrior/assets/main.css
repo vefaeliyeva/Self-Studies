@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,6 +70,10 @@ header .container .navigationPane .navbar ul li a {
   font-weight: 500;
   color: white;
 }
+header .container .navigationPane .navbar ul li a:hover {
+  color: #ffb320;
+  transition: all 1s;
+}
 header .container .navigationPane button {
   background-color: #ffb320;
   border-radius: 30px;
@@ -84,11 +87,11 @@ header .container .navigationPane button a {
 }
 
 #HERO .heroSectionContent {
-  padding: 150px 0px !important;
+  padding: 150px 20px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 30px;
+  row-gap: 40px;
   text-align: left;
 }
 #HERO .heroSectionContent h1 {
@@ -100,9 +103,9 @@ header .container .navigationPane button a {
   color: #ffb320;
 }
 #HERO .heroSectionContent p {
-  font-size: 14px;
+  font-size: 18px;
   color: white;
-  line-height: 2;
+  line-height: 1.5;
 }
 #HERO .heroSectionContent .primary {
   background-color: #ffb320;
@@ -116,17 +119,80 @@ header .container .navigationPane button a {
   color: black;
 }
 #HERO .carousel-indicators button {
-  width: 50px; /* Dairənin eni */
-  height: 50px; /* Dairənin hündürlüyü */
-  border-radius: 50%; /* Dairə formasında olsun */
-  background-color: yellow; /* Sarı fon */
-  color: black; /* Mətn rəngi */
-  font-size: 18px; /* Mətn ölçüsü */
-  font-weight: bold; /* Qalın mətn */
-  border: none; /* Sərhədsiz */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px; /* Aralarında məsafə */
+  margin-right: 5 px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffb320;
   transition: transform 0.2s ease-in-out;
+  margin-bottom: 40px;
+}
+
+#NEWS .latestNews p {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #ffb320;
+  padding: 30px 100px;
+}
+
+#FEATURE {
+  padding: 100px 0px;
+}
+#FEATURE .container .featureSection .featureCard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#FEATURE .container .featureSection .featureCard .featureItem {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 415px;
+  padding: 30px 0px 30px 30px;
+}
+#FEATURE .container .featureSection .featureCard .featureItem span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 24px !important;
+}
+#FEATURE .container .featureSection .featureCard .featureItem .new {
+  background-color: rgb(255, 32, 95);
+}
+#FEATURE .container .featureSection .featureCard .featureItem .strategy {
+  background-color: rgb(78, 174, 96);
+}
+#FEATURE .container .featureSection .featureCard .featureItem .racing {
+  background-color: rgb(105, 78, 174);
+}
+#FEATURE .container .featureSection .featureCard .featureItem .featureContent {
+  row-gap: 20px;
+}
+#FEATURE .container .featureSection .featureCard .featureItem .featureContent h5 a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+#FEATURE .container .featureSection .featureCard .featureItem .featureContent p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+}
+#FEATURE .container .featureSection .featureCard .featureItem .featureContent a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+}
+#FEATURE .container .featureSection .featureCard:first-child {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/1.jpg);
+}
+#FEATURE .container .featureSection .featureCard:nth-child(2) {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/2.jpg);
+}
+#FEATURE .container .featureSection .featureCard:nth-child(3) {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/3.jpg);
+}
+#FEATURE .container .featureSection .featureCard:last-child {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/4.jpg);
 }/*# sourceMappingURL=main.css.map */

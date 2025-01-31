@@ -1,0 +1,65 @@
+#FEATURE {
+  padding: 100px 0px;
+  .container {
+    .featureSection {
+      .featureCard {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .featureItem {
+          background-color: rgba(0, 0, 0, 0.5);
+          height: 415px;
+          padding: 30px 0px 30px 30px;
+          span {
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 6px 24px !important;
+          }
+          .new {
+            background-color: rgba(255, 32, 95, 1);
+          }
+          .strategy {
+            background-color: rgba(78, 174, 96, 1);
+          }
+          .racing {
+            background-color: rgba(105, 78, 174, 1);
+          }
+          .featureContent {
+            row-gap: 20px;
+            h5 {
+              a {
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+              }
+            }
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 1.5;
+              color: white;
+            }
+            a {
+              color: rgba(255, 255, 255, 0.5);
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .featureCard:first-child {
+        background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/1.jpg);
+      }
+      .featureCard:nth-child(2) {
+        background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/2.jpg);
+      }
+      .featureCard:nth-child(3) {
+        background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/3.jpg);
+      }
+      .featureCard:last-child {
+        background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/4.jpg);
+      }
+    }
+  }
+}

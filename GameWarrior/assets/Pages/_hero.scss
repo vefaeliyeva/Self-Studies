@@ -1,10 +1,10 @@
 #HERO{
         .heroSectionContent{
-            padding: 150px 0px !important;
+            padding: 150px 20px !important;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            row-gap: 30px;
+            row-gap: 40px;
             text-align: left;
             h1{
                 font-size: 60px;
@@ -15,9 +15,9 @@
                 }
             }
             p{
-                font-size: 14px;
+                font-size: 18px;
                 color: white;
-                line-height: 2;
+                line-height: 1.5;
             }
             .primary{
                 @include primaryButton();
@@ -25,19 +25,13 @@
 
         }
         .carousel-indicators button {
-            width: 50px;  /* Dairənin eni */
-            height: 50px; /* Dairənin hündürlüyü */
-            border-radius: 50%; /* Dairə formasında olsun */
-            background-color: yellow; /* Sarı fon */
-            color: black; /* Mətn rəngi */
-            font-size: 18px; /* Mətn ölçüsü */
-            font-weight: bold; /* Qalın mətn */
-            border: none; /* Sərhədsiz */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 5px; /* Aralarında məsafə */
+            margin-right: 5 px;
+            width: 30px;
+            height: 30px; 
+            border-radius: 50%;
+            background-color: #ffb320;
             transition: transform 0.2s ease-in-out;
+            margin-bottom: 40px;
           }
  
 }
