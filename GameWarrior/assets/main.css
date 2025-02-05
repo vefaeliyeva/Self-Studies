@@ -223,6 +223,15 @@ header .container .navigationPane button a {
   font-weight: 500;
   padding-top: 10px;
 }
+#RECENT .container .recentCardSection .recentCardFull:first-child .recentGameCard .recentGameCardTop {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+}
+#RECENT .container .recentCardSection .recentCardFull:nth-child(2) .recentGameCard .recentGameCardTop {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
+}
+#RECENT .container .recentCardSection .recentCardFull:last-child .recentGameCard .recentGameCardTop {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
+}
 #RECENT .container .recentCardSection .recentCardFull {
   margin-bottom: 42px;
 }
@@ -250,15 +259,6 @@ header .container .navigationPane button a {
 }
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardTop .adventure {
   background-color: #40ABF5;
-}
-#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(1) {
-  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
-}
-#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(2) {
-  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
-}
-#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(3) {
-  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
 }
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardContent {
   padding: 34px 22px 20px 22px;

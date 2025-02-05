@@ -19,6 +19,27 @@
       }
     }
     .recentCardSection {
+      .recentCardFull:first-child{
+        .recentGameCard{
+          .recentGameCardTop{
+            background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+          }
+        }
+      }
+      .recentCardFull:nth-child(2){
+        .recentGameCard{
+          .recentGameCardTop{
+            background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
+          }
+        }
+      }
+      .recentCardFull:last-child{
+        .recentGameCard{
+          .recentGameCardTop{
+            background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
+          }
+        }
+      }
       .recentCardFull{
         margin-bottom: 42px;
         .recentGameCardTop{
@@ -39,15 +60,6 @@
           .adventure{
             background-color: #40ABF5;
           }
-        }
-        .recentGameCardTop:nth-child(1){
-          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
-        }
-        .recentGameCardTop:nth-child(2){
-          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
-        }
-        .recentGameCardTop:nth-child(3){
-          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
         }
 
 
