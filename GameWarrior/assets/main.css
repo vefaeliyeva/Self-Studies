@@ -195,4 +195,105 @@ header .container .navigationPane button a {
 }
 #FEATURE .container .featureSection .featureCard:last-child {
   background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/features/4.jpg);
+}
+
+#RECENT {
+  padding: 100px 0px;
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #EEF2F6;
+}
+#RECENT .container .sectionTitle {
+  margin-bottom: 80px;
+}
+#RECENT .container .sectionTitle .category {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: #ff205f;
+}
+#RECENT .container .sectionTitle h2 {
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+#RECENT .container .recentCardSection .recentCardFull {
+  margin-bottom: 42px;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 204px;
+  padding: 25px 28px;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop .new {
+  background-color: #ff205f;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop .racing {
+  background-color: rgb(105, 78, 174);
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop .adventure {
+  background-color: #40ABF5;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent {
+  padding: 34px 22px 20px 22px;
+  background-color: white;
+  border-top: none;
+  border: 1px solid rgb(214, 222, 231);
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+  line-height: 2;
+  margin-bottom: 16px;
+  text-align: left;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter {
+  position: relative;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .comment {
+  font-size: 12px;
+  font-weight: 400;
+  color: #737373;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .cardContentFooterImages {
+  position: absolute;
+  bottom: -20px;
+  right: -22px;
+  background-color: #ff205f;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .cardContentFooterImages .extraImages {
+  width: 35px;
+  height: 35px;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .cardContentFooterImages .extraImages:first-child {
+  background-color: #FFB320;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .cardContentFooterImages .extraImages img {
+  width: 19px;
+  height: 19px;
 }/*# sourceMappingURL=main.css.map */

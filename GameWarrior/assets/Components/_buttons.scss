@@ -1,11 +1,20 @@
-@mixin primaryButton(){
-    background-color: #ffb320;
-    border-radius: 30px;
-    padding: 12px 28px;
-    border: none;
-    a{
-        font-weight: 500;
-        font-size: 14px;
-        color: black;
-    }
+@mixin primaryButton() {
+  background-color: #ffb320;
+  border-radius: 30px;
+  padding: 12px 28px;
+  border: none;
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+  }
+}
+@mixin primarySpan() {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
