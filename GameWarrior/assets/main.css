@@ -227,7 +227,6 @@ header .container .navigationPane button a {
   margin-bottom: 42px;
 }
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardTop {
-  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,6 +250,15 @@ header .container .navigationPane button a {
 }
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardTop .adventure {
   background-color: #40ABF5;
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(1) {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(2) {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
+}
+#RECENT .container .recentCardSection .recentCardFull .recentGameCardTop:nth-child(3) {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
 }
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardContent {
   padding: 34px 22px 20px 22px;

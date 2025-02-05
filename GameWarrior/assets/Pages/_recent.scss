@@ -21,8 +21,7 @@
     .recentCardSection {
       .recentCardFull{
         margin-bottom: 42px;
-        .recentGameCardTop {
-          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+        .recentGameCardTop{
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -41,6 +40,17 @@
             background-color: #40ABF5;
           }
         }
+        .recentGameCardTop:nth-child(1){
+          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/1.jpg);
+        }
+        .recentGameCardTop:nth-child(2){
+          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/2.jpg);
+        }
+        .recentGameCardTop:nth-child(3){
+          background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game/3.jpg);
+        }
+
+
         .recentGameCardContent {
           padding: 34px 22px 20px 22px;
           background-color: white;
