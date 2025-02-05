@@ -1,6 +1,9 @@
 # Self-Studies
 2025
 
+https://game-warrior-template.netlify.app/
+
+
 2024
 
 
