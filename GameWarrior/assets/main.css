@@ -304,4 +304,98 @@ header .container .navigationPane button a {
 #RECENT .container .recentCardSection .recentCardFull .recentGameCardContent .cardContentFooter .cardContentFooterImages .extraImages img {
   width: 19px;
   height: 19px;
+}
+
+#TOURNAMENTS {
+  padding: 100px 0px;
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/pattern.png);
+}
+#TOURNAMENTS .container .tournamentTitle h1 {
+  padding: 7px 25px;
+  display: inline-block;
+  background-color: #fb6e10;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#TOURNAMENTS .container .tournamentCard {
+  position: relative;
+  background-color: #252525;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardTitle h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 21px;
+  background-color: #ffb320;
+  text-transform: uppercase;
+  display: inline-block;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 68px 24px 38px 24px;
+}
+@media only screen and (max-width: 991px) {
+  #TOURNAMENTS .container .tournamentCard .tournamentCardContent {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #TOURNAMENTS .container .tournamentCard .tournamentCardContent {
+    flex-direction: row;
+  }
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentImage img {
+  width: 168px;
+  height: 178px;
+}
+@media only screen and (max-width: 991px) {
+  #TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentImage img {
+    width: 282px;
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentImage img {
+    width: 168px;
+    height: 178px;
+  }
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText {
+  row-gap: 22px;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffb320;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText ul {
+  row-gap: 8px;
+  font-family: "Roboto", serif;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText ul li {
+  color: white;
+  font-size: 12px;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText ul li span {
+  font-size: 12px;
+  color: #9a9a9a;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText p {
+  color: #ffb320;
+  font-size: 12px;
+}
+#TOURNAMENTS .container .tournamentCard .tournamentCardContent .tournamentCardContentText p span {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
