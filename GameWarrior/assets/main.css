@@ -404,7 +404,13 @@ header .container .navigationPane button a {
   padding: 100px 0px;
   background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
   background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 991px) {
+  #REVIEW {
+    background-image: none;
+  }
 }
 #REVIEW .container .reviewSection .reviewSectionTitle span {
   color: white;

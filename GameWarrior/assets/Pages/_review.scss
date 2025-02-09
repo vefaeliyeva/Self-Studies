@@ -2,8 +2,11 @@
   padding: 100px 0px;
   background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
   background-size: cover;
-//   background-position: right;
+  background-position: right;
   background-repeat: no-repeat;
+  @media only screen and (max-width:991px){
+    background-image: none;
+  }
   .container {
     .reviewSection {
       .reviewSectionTitle {
