@@ -489,27 +489,52 @@ header .container .navigationPane button a {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-#FOOTERTOP .container .footerSection .footerTopLeft {
-  display: block;
-}
-@media only screen and (max-width: 991px) {
-  #FOOTERTOP .container .footerSection .footerTopLeft {
-    display: none;
-  }
-}
 #FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftLogo img {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 991px) {
+  #FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftLogo img {
+    margin-bottom: 60px;
+  }
 }
 #FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftText p {
   font-size: 14px;
   margin-bottom: 16px;
   color: white;
 }
+@media only screen and (max-width: 991px) {
+  #FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftText p {
+    margin-bottom: 60px;
+  }
+}
+#FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftImage {
+  display: block;
+  margin-left: -40px;
+}
+@media only screen and (max-width: 991px) {
+  #FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftImage {
+    display: none;
+  }
+}
 #FOOTERTOP .container .footerSection .footerTopRightLeft,
 #FOOTERTOP .container .footerSection .footerTopRightRight {
   background-color: #252525;
-  border: 1px solid #4A4A4A;
+  border: 1px solid #4a4a4a;
   padding: 40px 30px 7px 30px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerLatestPostContent,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerLatestPostContent {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerLatestPostContent .contentImage,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerLatestPostContent .contentImage {
+  width: 97px;
+  height: 97px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerLatestPostContent .contentImage img,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerLatestPostContent .contentImage img {
+  width: 100%;
 }
 #FOOTERTOP .container .footerSection .footerTopRightLeft h1,
 #FOOTERTOP .container .footerSection .footerTopRightRight h1 {
@@ -565,4 +590,32 @@ header .container .navigationPane button a {
 #FOOTERTOP .container .footerSection .footerTopRightRight .footerCommentsContent .commentsContentImage img {
   border-radius: 50%;
   width: 100%;
+}
+
+#FOOTERBOTTOM {
+  background-color: #252525;
+  padding: 25px 0px;
+}
+@media only screen and (max-width: 991px) {
+  #FOOTERBOTTOM .container {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+#FOOTERBOTTOM .container .copyrightText p {
+  color: #aeaeae;
+  font-size: 14px;
+  font-weight: 500;
+}
+#FOOTERBOTTOM .container .copyrightText span {
+  color: #FF20AE;
+}
+#FOOTERBOTTOM .container .footerNavBar ul {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#FOOTERBOTTOM .container .footerNavBar ul li a {
+  color: #aeaeae;
+  font-size: 14px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

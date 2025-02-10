@@ -1,0 +1,31 @@
+#FOOTERBOTTOM {
+  background-color: #252525;
+  padding: 25px 0px;
+  .container {
+    @media only screen and (max-width:991px){
+        flex-direction: column;
+row-gap: 30px;    }
+    .copyrightText {
+      p {
+        color: #aeaeae;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      span{
+        color: #FF20AE;
+      }
+    }
+    .footerNavBar{
+        ul{
+            column-gap: 40px;
+            li{
+                a{
+                    color: #aeaeae;
+                    font-size: 14px;
+                    font-weight: 500; 
+                }
+            }
+        }
+    }
+  }
+}
