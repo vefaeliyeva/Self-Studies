@@ -1,0 +1,39 @@
+#FOOTERTOP{
+    padding: 75px 0px;
+    background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/pattern.png);
+    .container{
+        .footerSection{
+            column-gap: 30px;
+            .footerTopLeft{
+                display: block;
+                @media only screen and (max-width:991px){
+                    display: none;
+                }
+                .footerTopLeftLogo{
+                    img{
+                        margin-bottom: 30px;
+                    }
+                }
+                .footerTopLeftText{
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 16px;
+                        color: white;
+                    }
+                }
+            }
+            .footerTopRightLeft,
+            .footerTopRightRight{
+                background-color: #252525;
+                border: 1px solid #4A4A4A;
+                padding: 40px 30px 7px 30px;
+                h1{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: white;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

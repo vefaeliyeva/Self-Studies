@@ -479,4 +479,42 @@ header .container .navigationPane button a {
   font-size: 14px;
   line-height: 2;
   color: #878787;
+}
+
+#FOOTERTOP {
+  padding: 75px 0px;
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/pattern.png);
+}
+#FOOTERTOP .container .footerSection {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#FOOTERTOP .container .footerSection .footerTopLeft {
+  display: block;
+}
+@media only screen and (max-width: 991px) {
+  #FOOTERTOP .container .footerSection .footerTopLeft {
+    display: none;
+  }
+}
+#FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftLogo img {
+  margin-bottom: 30px;
+}
+#FOOTERTOP .container .footerSection .footerTopLeft .footerTopLeftText p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: white;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft,
+#FOOTERTOP .container .footerSection .footerTopRightRight {
+  background-color: #252525;
+  border: 1px solid #4A4A4A;
+  padding: 40px 30px 7px 30px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft h1,
+#FOOTERTOP .container .footerSection .footerTopRightRight h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
