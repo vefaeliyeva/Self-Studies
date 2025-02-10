@@ -33,6 +33,46 @@
                     color: white;
                     margin-bottom: 40px;
                 }
+                .date{
+                    margin-bottom: 8px;
+                    color: #ffb320;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+                p{
+                    margin-bottom: 6%;
+                    color: #d3d3d3;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+                .author,
+                .commentsSelectedWord{
+                    opacity: 0.45;
+                    color: #d3d3d3;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+                .commentatorName{
+                    color: #ff205f;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+
+                .footerCommentsContent{
+                    column-gap: 40px;
+                    .commentsContentImage{
+                        width: 63px;
+                        height: 63px;
+                        img{
+                            border-radius: 50%;
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }

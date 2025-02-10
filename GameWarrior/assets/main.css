@@ -517,4 +517,52 @@ header .container .navigationPane button a {
   font-weight: 500;
   color: white;
   margin-bottom: 40px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .date,
+#FOOTERTOP .container .footerSection .footerTopRightRight .date {
+  margin-bottom: 8px;
+  color: #ffb320;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft p,
+#FOOTERTOP .container .footerSection .footerTopRightRight p {
+  margin-bottom: 6%;
+  color: #d3d3d3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .author,
+#FOOTERTOP .container .footerSection .footerTopRightLeft .commentsSelectedWord,
+#FOOTERTOP .container .footerSection .footerTopRightRight .author,
+#FOOTERTOP .container .footerSection .footerTopRightRight .commentsSelectedWord {
+  opacity: 0.45;
+  color: #d3d3d3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .commentatorName,
+#FOOTERTOP .container .footerSection .footerTopRightRight .commentatorName {
+  color: #ff205f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerCommentsContent,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerCommentsContent {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerCommentsContent .commentsContentImage,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerCommentsContent .commentsContentImage {
+  width: 63px;
+  height: 63px;
+}
+#FOOTERTOP .container .footerSection .footerTopRightLeft .footerCommentsContent .commentsContentImage img,
+#FOOTERTOP .container .footerSection .footerTopRightRight .footerCommentsContent .commentsContentImage img {
+  border-radius: 50%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
