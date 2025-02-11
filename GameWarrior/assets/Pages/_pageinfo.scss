@@ -1,0 +1,27 @@
+#PAGEINFO{
+    padding-top: 270px;
+    padding-bottom: 84px;
+    background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/page-top-bg/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .container{
+        .pageInfoSection{
+            h1{
+                font-size: 60px;
+                font-weight: 400;
+                margin-bottom: 25px;
+                color: white;
+                @media only screen and (max-width:991px){
+                    font-size: 36px ;
+                }
+            }
+            p{
+                font-size: 14px;
+                color: white;
+                line-height: 2;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
