@@ -644,4 +644,45 @@ header .container .navigationPane button a {
   color: white;
   line-height: 2;
   margin-bottom: 16px;
+}
+
+#POST {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/community-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #B8B8B8;
+  padding: 100px 0px;
+}
+#POST .postCard {
+  background-color: #252525;
+  border: 1px solid #4a4a4a;
+  padding: 30px 50px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 21px;
+}
+#POST .postCard .postCardImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+#POST .postCard .postCardContent .postAuthor h5 {
+  line-height: 1.2;
+  color: #ff205f;
+  margin-bottom: 10px;
+}
+#POST .postCard .postCardContent .postAuthor h5 span {
+  padding-left: 18px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+#POST .postCard .postCardContent .postDate p {
+  font-size: 12px;
+  color: #ffb320;
+  margin-bottom: 18px;
+}
+#POST .postCard .postCardContent .postText p {
+  color: white;
+  font-size: 14px;
+  line-height: 2;
 }/*# sourceMappingURL=main.css.map */
