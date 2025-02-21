@@ -651,8 +651,33 @@ header .container .navigationPane button a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #B8B8B8;
   padding: 100px 0px;
+}
+#POST .postTitle {
+  padding-bottom: 50px;
+}
+#POST .postTitle .postTitleLeft h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#POST .postTitle .postTitleRight h2 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 15px;
+}
+#POST .postTitle .postTitleRight .dropdown button {
+  color: black !important;
+  background-color: white;
+}
+#POST .postTitle .postTitleRight .dropdown button:hover {
+  box-shadow: none;
+}
+#POST .postTitle .postTitleRight .dropdown ul li a {
+  font-size: 16px;
+}
+#POST .postTitle .postTitleRight .dropdown ul li a:hover {
+  box-shadow: none;
 }
 #POST .postCard {
   background-color: #252525;
@@ -685,4 +710,18 @@ header .container .navigationPane button a {
   color: white;
   font-size: 14px;
   line-height: 2;
+}
+#POST .postCommentsPagesDots .pagesNumbers {
+  background-color: #E5E5E5;
+  padding: 10px 8px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+#POST .postCommentsPagesDots .pagesNumbers a {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+#POST .postCommentsPagesDots .selectedPage {
+  background-color: #ffb320;
 }/*# sourceMappingURL=main.css.map */

@@ -3,8 +3,45 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #B8B8B8;
     padding: 100px 0px;
+    .postTitle{
+        padding-bottom: 50px;
+        .postTitleLeft{
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+        }
+        .postTitleRight{
+            h2{
+                font-size: 18px;
+                font-weight: 500;
+                padding-right: 15px;
+            }
+            .dropdown{
+                button{
+                    color: black !important;
+                    background-color: white;
+
+                    &:hover{
+                        box-shadow: none;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                            &:hover{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
     .postCard{
         background-color: #252525;
         border: 1px solid #4a4a4a;
@@ -45,6 +82,22 @@
                 }
             }
 
+        }
+    }
+    .postCommentsPagesDots{
+        .pagesNumbers{
+            background-color: #E5E5E5;
+            padding: 10px 8px;
+            margin-left: 15px;
+            border-radius: 50%;
+            a{
+                font-size: 14px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+        .selectedPage{
+            background-color: #ffb320;
         }
     }
 }
