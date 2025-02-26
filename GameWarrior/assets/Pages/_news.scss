@@ -1,12 +1,76 @@
 #NEWS{
     .latestNews{
+        position: absolute;
+        z-index: 100;
         p{
             display: inline-block;
             color: white;
             font-size: 16px;
             font-weight: 500;
             background-color: #ffb320;
-            padding: 30px 100px;
+            padding: 24px 100px;
         }
     }
+    @-webkit-keyframes ticker {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    
+    @keyframes ticker {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    
+    .ticker-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.9);
+      white-space: nowrap;
+      padding: 24px 0px;
+    }
+    
+    .ticker {
+      display: flex;
+      width: max-content;
+      -webkit-animation: ticker 10s linear infinite;
+      animation: ticker 10s linear infinite;
+    }
+    
+    .ticker_item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: 16px;
+      color: white;
+    }
+    
+    .ticker_item span {
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 24px !important;
+    }
+    
+    .new {
+      background-color: rgba(255, 32, 95, 1);
+    }
+    .strategy {
+      background-color: rgba(78, 174, 96, 1);
+    }
+    .racing {
+      background-color: rgba(105, 78, 174, 1);
+    }
+    
 }

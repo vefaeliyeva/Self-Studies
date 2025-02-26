@@ -22,7 +22,11 @@ row-gap: 30px;    }
                 a{
                     color: #aeaeae;
                     font-size: 14px;
-                    font-weight: 500; 
+                    font-weight: 500;
+                    transition: 1s;
+                    &:hover{
+                      color: #FFB320;
+                    } 
                 }
             }
         }

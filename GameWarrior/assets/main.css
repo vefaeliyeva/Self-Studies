@@ -59,7 +59,7 @@ body {
 header {
   padding: 20px 0px;
   background-color: black;
-  border-bottom: 3px solid #ffb320;
+  border-bottom: 1px solid #ffb320;
 }
 header .container .navigationPane .navbar ul {
   -moz-column-gap: 50px;
@@ -74,6 +74,11 @@ header .container .navigationPane .navbar ul li a:hover {
   color: #ffb320;
   transition: all 1s;
 }
+@media only screen and (max-width: 991px) {
+  header .container .navigationPane .navbar {
+    display: none;
+  }
+}
 header .container .navigationPane button {
   background-color: #ffb320;
   border-radius: 30px;
@@ -85,6 +90,24 @@ header .container .navigationPane button a {
   font-size: 14px;
   color: black;
 }
+@media only screen and (max-width: 991px) {
+  header .container .navigationPane button {
+    display: none;
+  }
+}
+header .container .navigationPane .headerMenuIcon {
+  display: none;
+}
+header .container .navigationPane .headerMenuIcon i {
+  font-size: 24px;
+  color: #ffb320;
+}
+@media only screen and (max-width: 991px) {
+  header .container .navigationPane .headerMenuIcon {
+    display: block;
+    cursor: pointer;
+  }
+}
 
 #HERO .heroSectionContent {
   padding: 150px 20px !important;
@@ -94,10 +117,20 @@ header .container .navigationPane button a {
   row-gap: 40px;
   text-align: left;
 }
+@media only screen and (max-width: 991px) {
+  #HERO .heroSectionContent {
+    padding: 50px 20px !important;
+  }
+}
 #HERO .heroSectionContent h1 {
   font-size: 60px;
   font-weight: 400;
   color: white;
+}
+@media only screen and (max-width: 991px) {
+  #HERO .heroSectionContent h1 {
+    font-size: 36px;
+  }
 }
 #HERO .heroSectionContent h1 span {
   color: #ffb320;
@@ -106,6 +139,11 @@ header .container .navigationPane button a {
   font-size: 18px;
   color: white;
   line-height: 1.5;
+}
+@media only screen and (max-width: 991px) {
+  #HERO .heroSectionContent p {
+    font-size: 14px;
+  }
 }
 #HERO .heroSectionContent .primary {
   background-color: #ffb320;
@@ -127,14 +165,221 @@ header .container .navigationPane button a {
   transition: transform 0.2s ease-in-out;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 991px) {
+  #HERO .carousel-indicators button {
+    display: none;
+  }
+}
 
+#ALTERNATIVE {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/recent-game-bg.png);
+  background-color: #B8B8B8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#ALTERNATIVE input[type=radio] {
+  display: none;
+}
+#ALTERNATIVE .js-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+}
+#ALTERNATIVE .js-slider_item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: right center;
+  transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
+  transition: all 1s ease, transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
+}
+#ALTERNATIVE #s-1:checked ~ .js-slider .js-slider_item.img-1,
+#ALTERNATIVE #s-2:checked ~ .js-slider .js-slider_item.img-2,
+#ALTERNATIVE #s-3:checked ~ .js-slider .js-slider_item.img-3 {
+  opacity: 1;
+  visibility: visible;
+  transform-origin: left center;
+  transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+}
+#ALTERNATIVE .js-slider_img {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+}
+#ALTERNATIVE .c-img-w-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate3d(-50%, -50%, 0);
+}
+#ALTERNATIVE .c-img-h-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate3d(-50%, -50%, 0);
+}
+#ALTERNATIVE figcaption {
+  display: block;
+}
+#ALTERNATIVE .wo-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #ffb320;
+}
+#ALTERNATIVE .c-label {
+  display: inline-block;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #ALTERNATIVE .c-label {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #ALTERNATIVE .c-label {
+    font-size: 30px;
+  }
+}
+#ALTERNATIVE span {
+  color: #ffb320;
+}
+#ALTERNATIVE .view-sm {
+  display: none;
+}
+#ALTERNATIVE .js-slider_nav {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translate3d(0, -50%, 0);
+}
+#ALTERNATIVE .js-slider_nav_item.prev {
+  left: 0;
+}
+#ALTERNATIVE .js-slider_nav_item.next {
+  right: 0;
+  transform: rotateY(180deg);
+}
+#ALTERNATIVE .js-slider_nav_item {
+  position: absolute;
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid #ffb320;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#ALTERNATIVE .js-slider_nav_item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1rem;
+  top: 55%;
+  width: 1rem;
+  height: 4px;
+  background-color: #ffb320;
+  transform-origin: left bottom;
+  transform: translate3d(0, -50%, 0) rotate(-45deg);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#ALTERNATIVE .js-slider_nav_item:hover {
+  transform: translate3d(-30%, 0, 0);
+}
+#ALTERNATIVE .js-slider_nav_item.next:hover {
+  transform: rotateY(180deg) translate3d(-30%, 0, 0);
+}
+#ALTERNATIVE .js-slider_nav_item:hover:before {
+  transform: translate3d(0, -50%, 0) rotate(-30deg);
+}
+#ALTERNATIVE .js-slider_nav_item:after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 2rem;
+  height: 2px;
+  background-color: #ffb320;
+  transform: translate3d(-50%, -50%, 0);
+}
+#ALTERNATIVE #s-1:checked ~ .js-slider .js-slider_nav .s-nav-1,
+#ALTERNATIVE #s-2:checked ~ .js-slider .js-slider_nav .s-nav-2,
+#ALTERNATIVE #s-3:checked ~ .js-slider .js-slider_nav .s-nav-3 {
+  display: block;
+}
+
+#NEWS .latestNews {
+  position: absolute;
+  z-index: 100;
+}
 #NEWS .latestNews p {
   display: inline-block;
   color: white;
   font-size: 16px;
   font-weight: 500;
   background-color: #ffb320;
-  padding: 30px 100px;
+  padding: 24px 100px;
+}
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+#NEWS .ticker-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  white-space: nowrap;
+  padding: 24px 0px;
+}
+#NEWS .ticker {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: ticker 10s linear infinite;
+}
+#NEWS .ticker_item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 16px;
+  color: white;
+}
+#NEWS .ticker_item span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 24px !important;
+}
+#NEWS .new {
+  background-color: rgb(255, 32, 95);
+}
+#NEWS .strategy {
+  background-color: rgb(78, 174, 96);
+}
+#NEWS .racing {
+  background-color: rgb(105, 78, 174);
 }
 
 #FEATURE {
@@ -618,6 +863,10 @@ header .container .navigationPane button a {
   color: #aeaeae;
   font-size: 14px;
   font-weight: 500;
+  transition: 1s;
+}
+#FOOTERBOTTOM .container .footerNavBar ul li a:hover {
+  color: #FFB320;
 }
 
 #PAGEINFO {
