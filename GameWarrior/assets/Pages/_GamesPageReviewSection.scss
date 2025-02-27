@@ -1,0 +1,79 @@
+#REVIEW {
+    padding: 100px 0px;
+    background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    @media only screen and (max-width:991px){
+      background-image: none;
+    }
+    .container {
+      .reviewSection {
+        .reviewSectionTitle {
+          span {
+            @include primarySpan();
+            background-color: #ff205f;
+            margin-bottom: 6px;
+          }
+          h1 {
+            font-size: 36px;
+            font-weight: 500;
+            padding-top: 10px;
+            margin-bottom: 100px;
+          }
+        }
+        .reviewSectionCardsRow {
+          .reviewSectionCard {
+            text-align: center;
+            position: relative;
+            .assasinPoint {
+              background-color: #ffb320;
+            }
+            .doomPoint {
+              background-color: #694eae;
+            }
+            .overwatchPoint {
+              background-color: #4eae60;
+            }
+            .GTAPoint {
+              background-color: #ff20ae;
+            }
+            .reviewGamePoints {
+              position: absolute;
+              top: -26px;
+              left: 34px;
+              width: 54px;
+              height: 54px;
+              border-radius: 50%;
+              span {
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+              }
+            }
+            .reviewCardImage {
+              img {
+                width: 100%;
+                @media only screen and (max-width: 991px) {
+                  height: 345px;
+                  object-fit: cover;
+                  object-position: top;
+                }
+              }
+            }
+            h3 {
+              font-size: 20px;
+              font-weight: 500;
+              margin-bottom: 20px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 2;
+              color: #878787;
+            }
+          }
+        }
+      }
+    }
+  }
+  

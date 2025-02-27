@@ -826,4 +826,85 @@ header .container .navigationPane .headerMenuIcon i {
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 0px;
+}
+
+#REVIEW {
+  padding: 100px 0px;
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 991px) {
+  #REVIEW {
+    background-image: none;
+  }
+}
+#REVIEW .container .reviewSection .reviewSectionTitle span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: #ff205f;
+  margin-bottom: 6px;
+}
+#REVIEW .container .reviewSection .reviewSectionTitle h1 {
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard {
+  text-align: center;
+  position: relative;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .assasinPoint {
+  background-color: #ffb320;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .doomPoint {
+  background-color: #694eae;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .overwatchPoint {
+  background-color: #4eae60;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .GTAPoint {
+  background-color: #ff20ae;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewGamePoints {
+  position: absolute;
+  top: -26px;
+  left: 34px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewGamePoints span {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewCardImage img {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  #REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewCardImage img {
+    height: 345px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard p {
+  font-size: 14px;
+  line-height: 2;
+  color: #878787;
 }/*# sourceMappingURL=main.css.map */
