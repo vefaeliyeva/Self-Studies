@@ -1,15 +1,12 @@
-#REVIEW {
+#GAMESPAGEREVIEW {
     padding: 100px 0px;
-    background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
+    background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg-2.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: left;
     background-repeat: no-repeat;
-    @media only screen and (max-width:991px){
-      background-image: none;
-    }
     .container {
-      .reviewSection {
-        .reviewSectionTitle {
+      .gamesPageReviewSection {
+        .gamesPageReviewSectionTitle {
           span {
             @include primarySpan();
             background-color: #ff205f;
@@ -20,10 +17,11 @@
             font-weight: 500;
             padding-top: 10px;
             margin-bottom: 100px;
+            color: white;
           }
         }
-        .reviewSectionCardsRow {
-          .reviewSectionCard {
+        .gamesPageReviewSectionCardsRow {
+          .gamesPageReviewSectionCard {
             text-align: center;
             position: relative;
             .assasinPoint {
@@ -51,7 +49,7 @@
                 color: white;
               }
             }
-            .reviewCardImage {
+            .gamesPageReviewImage {
               img {
                 width: 100%;
                 @media only screen and (max-width: 991px) {
@@ -65,6 +63,7 @@
               font-size: 20px;
               font-weight: 500;
               margin-bottom: 20px;
+              color: white;
             }
             p {
               font-size: 14px;

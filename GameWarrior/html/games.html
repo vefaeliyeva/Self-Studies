@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/Images/logo (6).png" />
+    <link
+      rel="shortcut icon"
+      href="../assets/Images/Header/HeaderLogoImage.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -68,72 +71,69 @@
     </section>
     <!-- ! PAGEINFO SECTION END -->
 
-    <!-- ! REVIEWGAMES SECTION START  -->
-    <section>
+    <!-- ! GAMES RATING SECTION START  -->
+    <section id="GAMESRATING">
       <div class="container">
-        <div class="gamesPageReviewSection">
-          <div class="reviewGamesSectionCard col-md-6 col-lg-3 mb-5">
+        <div class="gamesRatingSection">
+          <div class="gamesRatingCardSection col-md-6 mb-5">
             <div
-              class="reviewGamesGamePoints d-flex justify-content-center align-items-center"
+              class="gamesRatingSectionRatingPoint d-flex justify-content-center align-items-center"
             >
               <span>9.3</span>
             </div>
-            <div class="reviewGamesCardImage mb-4">
+            <div class="gamesRatingCardImage mb-4">
               <img
                 src="../assets/Images/Games/ReviewGamesCardImage (6).jpg"
                 alt=""
               />
             </div>
-            <h3>Overwatch Halloween</h3>
-            <div class="ratingStarDiv">
-              <div class="star">
-                <input type="radio" id="r1" />
-                <label for="r1"></label>
-
-                <input type="radio" id="r2" />
-                <label for="r2"></label>
-
-                <input type="radio" id="r3" />
-                <label for="r3"></label>
-
-                <input type="radio" id="r4" />
-                <label for="r4"></label>
-
-                <input type="radio" id="r5" />
-                <label for="r5"></label>
+            <div class="gamesRatingCardContent d-flex flex-column justify-content-center align-items-center">
+              <h3>Overwatch Halloween</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor
+                sit ame.
+              </p>
+              <div class="ratingStarDiv">
+                <div class="rating-stars">
+                  <input type="radio" name="rating" id="rs0" checked><label for="rs0"></label>
+                  <input type="radio" name="rating" id="rs1"><label for="rs1"></label>
+                  <input type="radio" name="rating" id="rs2"><label for="rs2"></label>
+                  <input type="radio" name="rating" id="rs3"><label for="rs3"></label>
+                  <input type="radio" name="rating" id="rs4"><label for="rs4"></label>
+                  <input type="radio" name="rating" id="rs5"><label for="rs5"></label>
+                  <span class="rating-counter"></span>
+                </div>            
               </div>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor
-              sit ame.
-            </p>
           </div>
+
+          
         </div>
       </div>
     </section>
-    <!-- ! REVIEWGAMES SECTION END -->
+    <!-- ! GAMES RATING SECTION END -->
 
-    <!-- ! REVIEW SECTION START -->
-    <section id="REVIEW">
+    <!-- ! GAMES PAGE REVIEW SECTION START -->
+    <section id="GAMESPAGEREVIEW">
       <div class="container">
         <div
-          class="reviewSection d-flex flex-column align-items-center justify-content-center"
+          class="gamesPageReviewSection d-flex flex-column align-items-center justify-content-center"
         >
           <div
-            class="reviewSectionTitle d-flex flex-column align-items-center justify-content-center"
+            class="gamesPageReviewSectionTitle d-flex flex-column align-items-center justify-content-center"
           >
             <span class="new"> new </span>
             <h1>Recent Reviews</h1>
           </div>
 
-          <div class="reviewSectionCardsRow row">
-            <div class="reviewSectionCard col-md-6 col-lg-3 mb-5">
+          <div class="gamesPageReviewSectionCardsRow row">
+            <div class="gamesPageReviewSectionCard col-md-6 col-lg-3 mb-5">
               <div
                 class="reviewGamePoints assasinPoint d-flex justify-content-center align-items-center"
               >
                 <span>9.3</span>
               </div>
-              <div class="reviewCardImage mb-4">
+              <div class="gamesPageReviewImage mb-4">
                 <img
                   src="../assets/Images/Home/ReviewCardImages (4).jpg"
                   alt=""
@@ -146,13 +146,13 @@
               </p>
             </div>
 
-            <div class="reviewSectionCard col-md-6 col-lg-3 mb-5">
+            <div class="gamesPageReviewSectionCard col-md-6 col-lg-3 mb-5">
               <div
                 class="reviewGamePoints doomPoint d-flex justify-content-center align-items-center"
               >
                 <span>9.5</span>
               </div>
-              <div class="reviewCardImage mb-4">
+              <div class="gamesPageReviewImage mb-4">
                 <img
                   src="../assets/Images/Home/ReviewCardImages (3).jpg"
                   alt=""
@@ -165,13 +165,13 @@
               </p>
             </div>
 
-            <div class="reviewSectionCard col-md-6 col-lg-3 mb-5">
+            <div class="gamesPageReviewSectionCard col-md-6 col-lg-3 mb-5">
               <div
                 class="reviewGamePoints overwatchPoint d-flex justify-content-center align-items-center"
               >
                 <span>9.1</span>
               </div>
-              <div class="reviewCardImage mb-4">
+              <div class="gamesPageReviewImage mb-4">
                 <img
                   src="../assets/Images/Home/ReviewCardImages (2).jpg"
                   alt=""
@@ -184,13 +184,13 @@
               </p>
             </div>
 
-            <div class="reviewSectionCard col-md-6 col-lg-3 mb-5">
+            <div class="gamesPageReviewSectionCard col-md-6 col-lg-3 mb-5">
               <div
                 class="reviewGamePoints GTAPoint d-flex justify-content-center align-items-center"
               >
                 <span>9.7</span>
               </div>
-              <div class="reviewCardImage mb-4">
+              <div class="gamesPageReviewImage mb-4">
                 <img
                   src="../assets/Images/Home/ReviewCardImages (1).jpg"
                   alt=""
@@ -206,7 +206,7 @@
         </div>
       </div>
     </section>
-    <!-- ! REVIEW SECTION END-->
+    <!-- ! GAMES PAGE REVIEW SECTION END-->
 
     <!-- ! FOOTER SECTION TOP START-->
     <footer id="FOOTERTOP">

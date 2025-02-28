@@ -828,19 +828,14 @@ header .container .navigationPane .headerMenuIcon i {
   padding: 100px 0px;
 }
 
-#REVIEW {
+#GAMESPAGEREVIEW {
   padding: 100px 0px;
-  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg.png);
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/review-bg-2.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 991px) {
-  #REVIEW {
-    background-image: none;
-  }
-}
-#REVIEW .container .reviewSection .reviewSectionTitle span {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionTitle span {
   color: white;
   font-size: 12px;
   font-weight: 500;
@@ -851,29 +846,30 @@ header .container .navigationPane .headerMenuIcon i {
   background-color: #ff205f;
   margin-bottom: 6px;
 }
-#REVIEW .container .reviewSection .reviewSectionTitle h1 {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionTitle h1 {
   font-size: 36px;
   font-weight: 500;
   padding-top: 10px;
   margin-bottom: 100px;
+  color: white;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard {
   text-align: center;
   position: relative;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .assasinPoint {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .assasinPoint {
   background-color: #ffb320;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .doomPoint {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .doomPoint {
   background-color: #694eae;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .overwatchPoint {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .overwatchPoint {
   background-color: #4eae60;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .GTAPoint {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .GTAPoint {
   background-color: #ff20ae;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewGamePoints {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .reviewGamePoints {
   position: absolute;
   top: -26px;
   left: 34px;
@@ -881,16 +877,16 @@ header .container .navigationPane .headerMenuIcon i {
   height: 54px;
   border-radius: 50%;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewGamePoints span {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .reviewGamePoints span {
   font-size: 18px;
   font-weight: 500;
   color: white;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewCardImage img {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .gamesPageReviewImage img {
   width: 100%;
 }
 @media only screen and (max-width: 991px) {
-  #REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard .reviewCardImage img {
+  #GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard .gamesPageReviewImage img {
     height: 345px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -898,13 +894,163 @@ header .container .navigationPane .headerMenuIcon i {
        object-position: top;
   }
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard h3 {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard h3 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: white;
 }
-#REVIEW .container .reviewSection .reviewSectionCardsRow .reviewSectionCard p {
+#GAMESPAGEREVIEW .container .gamesPageReviewSection .gamesPageReviewSectionCardsRow .gamesPageReviewSectionCard p {
   font-size: 14px;
   line-height: 2;
   color: #878787;
+}
+
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection {
+  position: relative;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingSectionRatingPoint {
+  position: absolute;
+  top: -26px;
+  left: 34px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingSectionRatingPoint span {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: #ffb320;
+  padding: 10px 7px;
+  border-radius: 50%;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardImage img {
+  width: 100%;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent p {
+  font-size: 14px;
+  color: #878787;
+  line-height: 2;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent .rating-stars {
+  display: block;
+  width: 50vmin;
+  padding: 1.75vmin 10vmin 2vmin 3vmin;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5647058824) 40vmin, rgba(255, 255, 255, 0) 40vmin 100%);
+  border-radius: 5vmin;
+  position: relative;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent .rating-counter {
+  font-size: 5.5vmin;
+  font-family: Arial, Helvetica, serif;
+  color: white;
+  width: 10vmin;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0 5vmin 5vmin 0;
+  line-height: 10vmin;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent .rating-counter:before {
+  content: "0";
+  transition: all 0.25s ease 0s;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input {
+  display: none;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label {
+  width: 5vmin;
+  height: 5vmin;
+  background: rgba(0, 0, 0, 0.7333333333);
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.5vmin 0.65vmin;
+  transition: all 1s ease 0s;
+  -webkit-clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+          clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs0] {
+  display: none;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label:before {
+  width: 90%;
+  height: 90%;
+  content: "";
+  background: orange;
+  z-index: -1;
+  display: block;
+  margin-left: 5%;
+  margin-top: 5%;
+  -webkit-clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+          clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+  background: linear-gradient(90deg, yellow, orange 30% 50%, #184580 50%, 70%, #173a75 100%);
+  background-size: 205% 100%;
+  background-position: 0 0;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label:hover:before {
+  transition: all 0.25s ease 0s;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked + label ~ label:before {
+  background-position: 100% 0;
+  transition: all 0.25s ease 0s;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked + label ~ label:hover:before {
+  background-position: 0% 0;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent #rs1:checked ~ .rating-counter:before {
+  content: "1";
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent #rs2:checked ~ .rating-counter:before {
+  content: "2";
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent #rs3:checked ~ .rating-counter:before {
+  content: "3";
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent #rs4:checked ~ .rating-counter:before {
+  content: "4";
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent #rs5:checked ~ .rating-counter:before {
+  content: "5";
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label + input:checked ~ .rating-counter:before {
+  color: #ffab00 !important;
+  transition: all 0.25s ease 0s;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label:hover ~ .rating-counter:before {
+  color: #9aacc6 !important;
+  transition: all 0.5s ease 0s;
+  animation: pulse 1s ease 0s infinite;
+}
+@keyframes pulse {
+  50% {
+    font-size: 6.25vmin;
+  }
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs1]:hover ~ .rating-counter:before {
+  content: "1" !important;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs2]:hover ~ .rating-counter:before {
+  content: "2" !important;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs3]:hover ~ .rating-counter:before {
+  content: "3" !important;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs4]:hover ~ .rating-counter:before {
+  content: "4" !important;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label[for=rs5]:hover ~ .rating-counter:before {
+  content: "5" !important;
+}
+#GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked:hover ~ .rating-counter:before {
+  animation: none !important;
+  color: #ffab00 !important;
 }/*# sourceMappingURL=main.css.map */
