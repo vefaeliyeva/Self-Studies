@@ -823,9 +823,6 @@ header .container .navigationPane .headerMenuIcon i {
 #PAGEINFOGAMES {
   background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/page-top-bg/3.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 0px;
 }
 
 #GAMESPAGEREVIEW {
@@ -906,6 +903,18 @@ header .container .navigationPane .headerMenuIcon i {
   color: #878787;
 }
 
+#GAMESRATING {
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/community-bg.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 100px 0px;
+}
+@media only screen and (max-width: 991px) {
+  #GAMESRATING {
+    background: none;
+  }
+}
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection {
   position: relative;
 }
@@ -942,22 +951,20 @@ header .container .navigationPane .headerMenuIcon i {
   display: block;
   width: 50vmin;
   padding: 1.75vmin 10vmin 2vmin 3vmin;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5647058824) 40vmin, rgba(255, 255, 255, 0) 40vmin 100%);
-  border-radius: 5vmin;
   position: relative;
 }
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent .rating-counter {
-  font-size: 5.5vmin;
+  font-size: 4.5vmin;
   font-family: Arial, Helvetica, serif;
   color: white;
   width: 10vmin;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: #ffab00;
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  border-radius: 0 5vmin 5vmin 0;
+  border-radius: 5vmin;
   line-height: 10vmin;
 }
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent .rating-counter:before {
@@ -992,7 +999,7 @@ header .container .navigationPane .headerMenuIcon i {
   margin-top: 5%;
   -webkit-clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
           clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
-  background: linear-gradient(90deg, yellow, orange 30% 50%, #184580 50%, 70%, #173a75 100%);
+  background: linear-gradient(90deg, yellow, orange 30% 50%, white 0%, 70%, rgb(212, 199, 199) 100%);
   background-size: 205% 100%;
   background-position: 0 0;
 }
@@ -1026,7 +1033,7 @@ header .container .navigationPane .headerMenuIcon i {
   transition: all 0.25s ease 0s;
 }
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent label:hover ~ .rating-counter:before {
-  color: #9aacc6 !important;
+  color: white !important;
   transition: all 0.5s ease 0s;
   animation: pulse 1s ease 0s infinite;
 }
@@ -1052,5 +1059,5 @@ header .container .navigationPane .headerMenuIcon i {
 }
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked:hover ~ .rating-counter:before {
   animation: none !important;
-  color: red !important;
+  color: #ffab00 !important;
 }/*# sourceMappingURL=main.css.map */
