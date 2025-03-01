@@ -1052,5 +1052,5 @@ header .container .navigationPane .headerMenuIcon i {
 }
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked:hover ~ .rating-counter:before {
   animation: none !important;
-  color: #ffab00 !important;
+  color: red !important;
 }/*# sourceMappingURL=main.css.map */
