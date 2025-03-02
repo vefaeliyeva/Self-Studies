@@ -62,8 +62,8 @@ header {
   border-bottom: 1px solid #ffb320;
 }
 header .container .navigationPane .navbar ul {
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 header .container .navigationPane .navbar ul li a {
   font-size: 16px;
@@ -230,6 +230,9 @@ header .container .navigationPane .headerMenuIcon i {
 }
 #NEWS .racing {
   background-color: rgb(105, 78, 174);
+}
+#NEWS .invisible {
+  color: none;
 }
 
 #FEATURE {
