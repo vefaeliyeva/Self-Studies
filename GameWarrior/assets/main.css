@@ -183,6 +183,11 @@ header .container .navigationPane .headerMenuIcon i {
   background-color: #ffb320;
   padding: 24px 100px;
 }
+@media only screen and (max-width: 991px) {
+  #NEWS .latestNews p {
+    display: none;
+  }
+}
 @keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);
@@ -820,9 +825,12 @@ header .container .navigationPane .headerMenuIcon i {
   background-color: #ffb320;
 }
 
-#PAGEINFOGAMES {
+.gamesPageBckg {
   background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/page-top-bg/3.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 100px 0px;
 }
 
 #GAMESPAGEREVIEW {
