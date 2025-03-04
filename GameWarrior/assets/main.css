@@ -1071,4 +1071,47 @@ header .container .navigationPane .headerMenuIcon i {
 #GAMESRATING .container .gamesRatingSection .gamesRatingCardSection .gamesRatingCardContent input:checked:hover ~ .rating-counter:before {
   animation: none !important;
   color: #ffab00 !important;
+}
+
+#INPUT .contact-info {
+  width: 40%;
+}
+#INPUT .contact-info h2 {
+  font-size: 24px;
+}
+#INPUT .contact-info p {
+  font-size: 14px;
+  color: #555;
+}
+#INPUT .contact-info .social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+#INPUT .contact-form {
+  width: 50%;
+}
+#INPUT .contact-form h2 {
+  font-size: 24px;
+}
+#INPUT .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+#INPUT .contact-form form input,
+#INPUT .contact-form form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+#INPUT .contact-form form button {
+  background: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+#INPUT .contact-form form button:hover {
+  background: darkorange;
 }/*# sourceMappingURL=main.css.map */
