@@ -1,21 +1,29 @@
-header{
-    .container{
-        background-color: red;
-        .navbar{
-            @include flexBox();
-            .logo{
-                img{
-                    width: 100%;
-                }
-            }
-            nav{
-                ul{
-                    display: flex;
-                }
-            }
-            button{
-                padding: 15px 25px;
-            }
-        }
+.container {
+  .navbar {
+    // position: fixed;
+    @include flexBox();
+    .logo {
+      img {
+        width: 100%;
+      }
     }
+    nav {
+      ul {
+        @include flexBox();
+        column-gap: 2.6em;
+        li {
+          a {
+            font-size: 2em;
+            font-weight: 500;
+            color: white    ;
+          }
+        }
+      }
+    }
+    button {
+      padding: 0.6em 2.3em;
+      font-size: 2em;
+      font-weight: 300;
+    }
+  }
 }
