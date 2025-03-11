@@ -1,0 +1,21 @@
+header{
+    .container{
+        background-color: red;
+        .navbar{
+            @include flexBox();
+            .logo{
+                img{
+                    width: 100%;
+                }
+            }
+            nav{
+                ul{
+                    display: flex;
+                }
+            }
+            button{
+                padding: 15px 25px;
+            }
+        }
+    }
+}
